@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Chat</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Global Chat Room</h1>
+            <div class="connection-status" id="connectionStatus">Disconnected</div>
+        </header>
+
+        <div class="messages-area" id="messages">
+            <!-- Messages will appear here -->
+            <div class="message system">
+                <p>Welcome to the chat!</p>
+            </div>
+        </div>
+
+        <form class="input-area" id="messageForm">
+            <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" required>
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
